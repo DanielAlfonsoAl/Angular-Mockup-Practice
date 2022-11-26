@@ -8,6 +8,12 @@ $color-text: #000000;
 $color-rojo: #fe0000;
 
 // predeterminados 
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,11 +21,16 @@ $color-rojo: #fe0000;
 }
 
 .header{
+    padding: 6px;
+    margin: 6px;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     background-color: $color-blanco;
+    box-shadow: 0px 6px 20px black ;
+    margin-block-end: 1.5rem; 
+    border-radius: 18px;  
     header{
         width: 5%;
         a{
@@ -70,7 +81,16 @@ $color-rojo: #fe0000;
     border-radius: 25px;
     border-color: $color-mostaza;
     background-color: $color-blanco;
-    color: $color-mostaza;   
+    color: $color-text;   
+    &:hover
+    {
+        cursor: pointer;
+        border: 25px;
+        border: solid;
+        color: $color-blanco;
+        border-color: $color-text;
+        background-color: $color-mostaza;
+    }
 }
 #idSingUp{
     width: 6rem;
@@ -81,6 +101,7 @@ $color-rojo: #fe0000;
     color: $color-blanco;
     border: none;
     &:hover{
+    cursor: pointer;
     border: 25px;
     border: solid;
     background-color: $color-blanco;

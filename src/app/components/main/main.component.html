@@ -1,0 +1,27 @@
+<div class="bienvenida">
+    <section class="letras">
+        <h2> Puedes <strong class="letrasDiferentes">comer</strong>  facil & <strong class="letrasDiferentes">rapido</strong> </h2>
+        <p>come tambien a domicilio come ahora o mira nuestro menu para que te antojes</p>
+        <div class="buttons">
+         <input type="button" value="🛒 Ordenar ahora" id="btnOrdenar">
+        <input type="button" value=" 🍔 Ver menu" class="btnMenu">
+        </div>
+        <div>
+            <h4>Danos tu opinion de nuestros servicios</h4>
+
+            <img (click)="Megusta()" src="{{megusta}}" alt=""> <p>{{ Nmegusta }}</p>
+            <img (click)="Nomegusta" src="{{nomegusta}}" alt=""> <p>{{ Nnomegusta }}</p>
+        </div>
+           </section>
+
+    <section class="imagen">
+        <img src="../../../assets/bienvenida.jpg" alt="">
+        <br>
+        <h3>Total a pagar: <strong id="total">${{ valor }}</strong> </h3>
+        <div class="container">
+        <button (click)="restar()" id="menos"> - </button>
+        <strong id="contador">{{numero}}</strong>
+        <button (click)="sumar()" id="mas"> + </button>
+        </div>
+    </section>
+</div>
